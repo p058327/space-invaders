@@ -11,7 +11,7 @@ INVADERS = pygame.image.load('images/alien.bmp').convert_alpha()
 BULLET = pygame.image.load('images/bullet.png').convert_alpha()
 
 SHIP_SIZE = SCREEN_WIDTH // 30, SCREEN_HEIGHT // 15
-INVADERS_SIZE = SCREEN_WIDTH // 15, SCREEN_HEIGHT // 15
+INVADERS_SIZE = SCREEN_WIDTH // 40, SCREEN_HEIGHT // 40
 BULLET_SIZE = SCREEN_WIDTH // 60, SCREEN_HEIGHT // 30
 
 SPACESHIP_image = pygame.transform.scale(SHIP, SHIP_SIZE)

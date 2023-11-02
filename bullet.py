@@ -10,7 +10,7 @@ class Bullet(Entity):
         self.direction = direction
 
     def update(self):
-        self.rect.move_ip(0, self.direction * SCREEN_HEIGHT // 200 * BULLET_SPEED)
+        self.rect.move_ip(0, self.direction * SCREEN_HEIGHT // 400 * BULLET_SPEED)
         # check if sprite has gone of screen
         if self.rect.bottom < 0:
             self.kill()
