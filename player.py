@@ -16,4 +16,4 @@ class Player(Entity):
         self.rect.clamp_ip(st.SCREEN_RECT)
 
     def shoot(self):
-        return Bullet(st.BULLET_image, 1, self.rect.center, -1)
+        return Bullet(st.SHIP_BULLET_IMAGE, 1, self.rect.center, -1)

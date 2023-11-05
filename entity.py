@@ -1,5 +1,4 @@
 import pygame
-from collections import namedtuple
 
 
 class Entity(pygame.sprite.Sprite):

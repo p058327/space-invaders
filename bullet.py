@@ -12,8 +12,5 @@ class Bullet(Entity):
     def update(self):
         self.rect.move_ip(0, self.direction * SCREEN_HEIGHT // 400 * BULLET_SPEED)
         # check if sprite has gone of screen
-        if self.rect.bottom < 0:
+        if self.rect.bottom < 0 or self.rect.top > SCREEN_HEIGHT:
             self.kill()
-
-    def render(self, screen):
-        screen.blit(self.image, self.rect)
