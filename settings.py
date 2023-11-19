@@ -33,6 +33,3 @@ SPACESHIP_POS = pygame.Vector2(SCREEN_WIDTH // 2, SCREEN_HEIGHT * 0.9)
 
 CLOCK = pygame.time.Clock()
 FPS = 60
-
-# d = 'reduction'
-# print(d.upper())

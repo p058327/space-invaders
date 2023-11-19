@@ -239,4 +239,3 @@ class Manager:
             text_rect = text.get_rect()
             text_rect.center = (st.SCREEN_WIDTH // 2, st.SCREEN_HEIGHT // 8)
             self.screen.blit(text, text_rect)
-
