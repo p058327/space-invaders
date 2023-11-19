@@ -2,6 +2,7 @@ import pygame
 
 SCREEN_WIDTH = 1200
 SCREEN_HEIGHT = 800
+GAME_STAGES = 3
 
 SCREEN = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 SCREEN_RECT = SCREEN.get_rect()
@@ -21,14 +22,17 @@ INVADER_IMAGE = lambda: pygame.transform.scale(INVADERS, INVADERS_SIZE)
 SHIP_BULLET_IMAGE = pygame.transform.scale(SHIP_BULLET, SHIP_BULLET_SIZE)
 INVADERS_BULLET_IMAGE = pygame.transform.scale(INVADERS_BULLET, INVADERS_BULLET_SIZE)
 
-SPACESHIP_SPEED = 1
-INVADER_SPEED = 1
-BULLET_SPEED = 1
+SPACESHIP_SPEED = 3
+INVADER_SPEED = 3
+BULLET_SPEED = 3
+
+SCORE = 10
+REDUCTION_SCORE = 50
 
 SPACESHIP_POS = pygame.Vector2(SCREEN_WIDTH // 2, SCREEN_HEIGHT * 0.9)
 
 CLOCK = pygame.time.Clock()
 FPS = 60
 
-# d = "Bullet"
+# d = 'reduction'
 # print(d.upper())
